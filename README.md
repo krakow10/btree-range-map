@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/crates/l/btree-range-map.svg?style=flat-square)](https://github.com/timothee-haudebourg/btree-range-map#license)
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square)](https://docs.rs/btree-range-map)
 
+<!-- cargo-rdme start -->
+
 A *range map* is a map where keys are aggregated into ranges of keys for
 efficient storage. Every time you need to store a large number numeric-keyed
 items in a map or set, a range map (or range set) should be used.
@@ -85,6 +87,8 @@ range_map.insert(RangeFromExcluded::new(0.0), true);
 assert_eq!(range_map.range_count(), 2);
 assert_eq!(range_map.get(0.0), None); // only `0.0` is unmapped.
 ```
+
+<!-- cargo-rdme end -->
 
 ## License
 
